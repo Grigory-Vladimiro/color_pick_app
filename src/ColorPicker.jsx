@@ -4,13 +4,17 @@ function ColorPicker(){
 
     const [color, setColor] = useState({hue: 0, saturation: 50, lighness: 50});
 
+    function handleColorChange (event){
+setColor(event.target.value);
+    }
+
     return(<div className="color-picker-container">
 <h1>Color Picker</h1>
 <div className="color-display" style={{backgroundColor: color}}>
 <p>Selected Color: {color}</p>
     </div>
     <label>Select a color:</label>
-    <input></input>
+    <input type="color" value = {color} onChange = {handleColorChange}/>
     </div>);
 } 
 export default ColorPicker
