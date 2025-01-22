@@ -2,6 +2,7 @@
   "name": "color_pick_app2",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://https://grigory-vladimiro.github.io/color_pick_app/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
